@@ -7,7 +7,7 @@ module.exports={
 			nameFile:'Soy batman !!!',
 			ContentType:"image/gif",
 			fileCollection:"fs",
-			extencion:".gif",
+			extension:".gif",
 			des:"descipcion Soy batman",
 			file:"Bat.gif",
 			path:"./files/Bat.gif"

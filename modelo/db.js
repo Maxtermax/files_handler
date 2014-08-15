@@ -3,7 +3,7 @@ var Grid = require('gridfs-stream');
 var mongoose=require('mongoose');//mongoose driver 
 var mongoID=mongoose.mongo.ObjectID;
 
-var conn=mongoose.createConnection('localhost', 'Archivo', 27017).once('open',function(){
+var conn=mongoose.createConnection('localhost', 'Archivo',27017).once('open',function(){
 	console.log("Conexion de archivo lista");
 });//files collection 
 var gfs=Grid(conn.db,mongoose.mongo);
@@ -24,7 +24,7 @@ module.exports={
 		metadata:{
 			"nameFile":data.nameFile,
 			"descripcion":data.des,
-			"ID":ID+data.extencion
+			"ID":ID+data.extension
 		}
 	});	
 	fs.createReadStream(data.path).pipe(escritura);
