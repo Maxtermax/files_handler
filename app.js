@@ -48,7 +48,7 @@ app.get("/",function(req,res){
 
 
 
-//app.get("/",rutas.Set.WriteFile);//write file in db
+app.get("/",rutas.Set.WriteFile);//write file in db
 app.get("/:u/:id",rutas.Get.ReadFile);//send file
 
 
