@@ -1,8 +1,7 @@
 var DB=require("../modelo/db.js");
 
 module.exports={
-	Filehandler:function(req,res){
-
+	WriteFile:function(req,res){
 		DB.OpenAndWriteF({
 			User:'esneyder',
 			nameFile:'Soy batman !!!',

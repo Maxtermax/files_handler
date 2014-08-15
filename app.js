@@ -13,8 +13,6 @@ app.use(middlewares.Ajax_Update());
 app.use(express.static(__dirname+'/'));
 
 
-
-
 io.on('connection',function(socket){
 	console.log("Nueva conexion socket.io");
 	socket.on('emit_valor_Busqueda',function(valor_Busqueda){	

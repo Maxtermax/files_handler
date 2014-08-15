@@ -12,7 +12,7 @@ var Esquema=new Schema({
 	views:{ type: Number,default:0 }
 });
 
-var Umodel=mongoose.model('best5',Esquema);
+var Umodel=mongoose.model('prueba_5mejores',Esquema);
 module.exports=Umodel;
 
 
