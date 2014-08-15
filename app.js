@@ -39,16 +39,17 @@ io.on('connection',function(socket){
 });
 
 
-
+/*
 
 app.get("/",function(req,res){
 	res.sendfile("./vistas/index.html");
 });
+*/
 
 
 
 
-//app.get("/",rutas.Set.WriteFile);//write file in db
+app.get("/",rutas.Set.WriteFile);//write file in db
 app.get("/:u/:id",rutas.Get.ReadFile);//send file
 
 

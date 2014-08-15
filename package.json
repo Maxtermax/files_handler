@@ -1,0 +1,14 @@
+{
+	"autor":"esneyder amin palacios mena",
+	"name":"file_handler",
+	"version":"0.0.0",
+	"dependencies":{
+		"socket.io":"*",
+		"morgan":"1.0.0",
+		"multer":"0.1.0",
+		"body-parser":"1.0.0",
+		"method-override":"1.0.0",	
+		"express":"4"
+
+	}
+}
