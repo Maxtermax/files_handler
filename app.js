@@ -17,35 +17,27 @@ app.use(express.static(__dirname+'/'));
 
 io.on('connection',function(socket){
 	console.log("Nueva conexion socket.io");
-	socket.on('emit_valor_Busqueda',function(valor_Busqueda){
-		
+	socket.on('emit_valor_Busqueda',function(valor_Busqueda){	
 		user_model.find({
 			name:new RegExp(valor_Busqueda,'ig')
 			}).limit(3).sort('-views').exec(function(err,docs){
 				if(err) console.log(err);		
 				socket.emit('res_busqueda',docs);
-				
 		});//busca user
-
-
 	});//termina on 
-
-
-
 	socket.on('disconnect',function(){
 		console.log("disconnect")
 	});
-
 });
 
 
-/*
 
+
+/*
 app.get("/",function(req,res){
 	res.sendfile("./vistas/index.html");
 });
 */
-
 
 
 
