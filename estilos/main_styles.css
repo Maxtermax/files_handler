@@ -1,0 +1,62 @@
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url("./fuentes/OpenSans-Regular.ttf") format("TrueType");
+  font-style: normal;
+}
+
+body{
+	background:white;
+	font-family: OpenSans-Regular;
+
+}
+.buscar_evento{
+	background:white;
+	border-radius:50px;
+	border:1px solid rgba(0,0,0,0.5);
+	width: 100%;
+	height: 35px;
+	outline:none; 
+	font-size:16px;
+	color:rgba(0,0,0,0.5);
+	padding:0px 10px;
+
+}
+#form_S_E{
+	width:360px;
+	padding:0px;
+}
+
+.conenedor_main_search{
+	background:silver;
+	border:1px solid silver;
+	border-radius:0px 0px 8px 8px;
+	width:100%;
+	padding:0px 5px;
+	overflow:hidden;
+}
+
+
+
+.conenedor_main_search li{
+	background:white;
+	border-bottom:1px solid silver;
+	color:rgba(0,0,0,0.6);
+	display:none;
+	padding:5px 5px;
+	height: 45px;
+	margin-top:2px;
+	margin-left:-5px;
+	cursor:pointer;
+	overflow:hidden;
+	font-weight:bold;
+	-webkit-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	transition:all 0.25s;
+	width:100%;
+
+}
+.conenedor_main_search li:hover{
+	box-shadow:0px 0px 35px rgba(0,0,0,0.35);
+	padding:5px 10px;
+	width:100%;
+}
