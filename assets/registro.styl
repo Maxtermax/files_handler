@@ -1,0 +1,85 @@
+opa=rgba(0,0,0,0.5)
+
+body
+	background white
+	font-size 16px 
+	font-family helvetica 
+
+	.progress
+		background #339966
+		width 20%
+		height 3px 
+		position absolute 
+		top 0px
+		left 0px 
+		-webkit-transition all 0.5s
+	header 
+		border 1px solid red 
+		padding 10px 0px 
+
+	.log 
+		border 1px solid olive 
+		padding 10px 0px 
+		position relative 
+		top 30px 
+		width 80%
+		height 500px  
+		margin 0px auto 
+
+	#Basic_info span 
+		position relative
+		top 20px 	
+
+	.data_inputs,	.collection_inputs
+		display inline-block 
+		margin-right 40px 
+		padding 5px 
+		position absolute
+		top 0px 
+		width 50%
+		height 100%
+		text-align center
+
+	.data_inputs
+		border-right 1px solid red 
+		background-image url('../assets/iconos/check_good.png')
+		background-repeat no-repeat 
+		background-position-x 90%
+		background-position-y 9px
+		left 0px 
+		top 10px 
+		height 95%
+
+	
+	.collection_inputs
+		left 51%
+		width 48%
+
+	.collection_inputs input 
+		border none 
+		border 1px solid  opa
+		border-radius 30px 
+		padding 5px 10px 
+		display block
+		outline none
+		width 300px 
+		font-size 16px 
+		margin 30px auto 
+
+	input[type="submit"] 
+		border 1px solid red 
+		color red
+		background white
+		-webkit-transition all 0.5s
+		font-weigth bold 
+		positon relative
+		top 40px 
+
+	.enviar:hover 
+		background #f00
+		border none 
+		color white 
+		cursor pointer 
+
+		
+

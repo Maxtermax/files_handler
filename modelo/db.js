@@ -50,7 +50,7 @@ module.exports={
 						console.log("start..");//comienza a leer la data binaria
 				}).on('data',function(chunk){
 						//loading...
-					console.log("loading file"); 
+					//console.log("loading file"); 
 				}).on("end",function(){
 					console.log("ready");//termina de leer 
 						//loaded :)

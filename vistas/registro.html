@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>registro</title>
+	<link rel="stylesheet" href="../assets/registro.css">
+</head>
+<body>
+	<header>
+	 <div class="progress"></div>	
+	<h1>Reservamelo</h1>
+	</header>
+	
+
+
+
+
+
+
+	<div class="log">
+ 		<div class="data_inputs">
+ 			<em class="title_info">Nombre</em>
+ 			<p class="indicator">
+				Escribe tu nombre de usuario
+ 			</p>
+ 		</div>
+
+		<div class="collection_inputs">
+
+			<form id="Basic_info" action="/fetbhw" method="POST">
+				<span> <b>* Nombre</b>  </span>
+				<input name="name" type="text" required placeholder="Nombre" maxlength="15">
+				
+				<span> <b>* Contraseña</b>  </span>
+				<input name="pass" type="password" required placeholder="Contraseña" maxlength="15">
+				<span> <b>* Correo Electronico</b></span>
+				 
+				<input name="email" type="email" placeholder="Correo electronico" required >
+				 
+				<span> <b>Twitter</b> <small>(Opcional)</small> </span>
+				<input name="twitter" type="text" placeholder="@Twitter" maxlength="8">
+				
+				<input class="enviar" type="submit" value="Siguiente >" >
+				
+			</form>
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<script src="../dependencies/scripts/jquery.js"></script>
+	<script src="../dependencies/scripts/registro.js"></script>
+</body>
+
+</html>

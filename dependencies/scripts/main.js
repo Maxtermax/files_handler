@@ -42,11 +42,37 @@ front.on('res_busqueda',function(users){
 	}else{	
 		$(".tres").hide();
 	}
+});
 
 
+front.on('post',function(post){
+	console.log('post ',post);
+	for(i in post){
+		$("body").append($("<p> nombre: "+post[i]['name']+"</p> <img src=http://localhost:1234/"+post[i]['name']+'/'+post[i]["img_profile"]+" width=200px height=200px > "));
+	}
 
 });
-		
+
+var how_many=0;
+$(".more_post").click(function(){
+	front.emit('more_post',how_many);
+	how_many+=3;
+});//end click
+	
+
+front.on('take_more_post',function(more){	
+	if(!more[0]){
+		console.log('No hay mas post :(');
+	}else{
+		for ( i in more ) {
+			$("body").append($("<p> more: "+more[i]['name']+"</p> <img src=http://localhost:1234/"+more[i]['name']+'/'+more[i]["img_profile"]+" width=200px height=200px > "));
+		}
+	}
+
+});//end more		1039695905
+
+
+
 
 
 

@@ -1,0 +1,82 @@
+body {
+  background: #fff;
+  font-size: 16px;
+  font-family: helvetica;
+}
+body .progress {
+  background: #396;
+  width: 20%;
+  height: 3px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: all 0.5s;
+}
+body header {
+  border: 1px solid #f00;
+  padding: 10px 0px;
+}
+body .log {
+  border: 1px solid #808000;
+  padding: 10px 0px;
+  position: relative;
+  top: 30px;
+  width: 80%;
+  height: 500px;
+  margin: 0px auto;
+}
+body #Basic_info span {
+  position: relative;
+  top: 20px;
+}
+body .data_inputs,
+body .collection_inputs {
+  display: inline-block;
+  margin-right: 40px;
+  padding: 5px;
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+body .data_inputs {
+  border-right: 1px solid #f00;
+  background-image: url("../assets/iconos/check_good.png");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 9px;
+  left: 0px;
+  top: 10px;
+  height: 95%;
+}
+body .collection_inputs {
+  left: 51%;
+  width: 48%;
+}
+body .collection_inputs input {
+  border: none;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 30px;
+  padding: 5px 10px;
+  display: block;
+  outline: none;
+  width: 300px;
+  font-size: 16px;
+  margin: 30px auto;
+}
+body input[type="submit"] {
+  border: 1px solid #f00;
+  color: #f00;
+  background: #fff;
+  -webkit-transition: all 0.5s;
+  font-weigth: bold;
+  positon: relative;
+  top: 40px;
+}
+body .enviar:hover {
+  background: #f00;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
